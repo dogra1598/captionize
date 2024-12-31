@@ -27,8 +27,8 @@ const InputField = ({
           value={value}
           name={name}
           placeholder={placeholder}
-          {...(type === "number" ? (min = { min }) : null)}
-          {...(type === "number" ? (max = { max }) : null)}
+          {...(type === "number" ? (min = { min }) : "")}
+          {...(type === "number" ? (max = { max }) : "")}
           className={
             `px-2 py-1.5 border border-neutral-300 focus:border-2 focus:border-neutral-400 outline-none rounded text-stone-700 bg-transparent ` +
             inputClasses

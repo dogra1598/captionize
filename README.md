@@ -30,6 +30,12 @@ Start the app
   npm run dev
 ```
 
+Sample Video URL for testing
+
+```bash
+https://res.cloudinary.com/dal5laebp/video/upload/v1735614650/lubwng2rmodymjpyvsow.mp4
+```
+
 
 ## Live Website Link
 

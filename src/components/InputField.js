@@ -3,9 +3,11 @@ const InputField = ({
   label = "label",
   value = "",
   type = "text",
+  rows = 5,
   name = "",
   placeholder = "Enter text...",
   min = 0,
+  max = 0,
   inputClasses = "",
   labelClasses = "",
   containerClasses = "",
@@ -17,7 +19,7 @@ const InputField = ({
   };
 
   return (
-    <div className={`grid mx-5 ` + containerClasses}>
+    <div className={`grid ` + containerClasses}>
       <label className={`mb-1 text-stone-600 font-semibold` + labelClasses}>{label}</label>
       {inputType === "input" && (
         <input
@@ -26,18 +28,22 @@ const InputField = ({
           name={name}
           placeholder={placeholder}
           {...(type === "number" ? (min = { min }) : null)}
+          {...(type === "number" ? (max = { max }) : null)}
           className={
-            `px-2 py-1 border border-neutral-300 focus:border-2 focus:border-neutral-400 outline-none rounded-sm text-stone-700 ` + inputClasses
+            `px-2 py-1.5 border border-neutral-300 focus:border-2 focus:border-neutral-400 outline-none rounded text-stone-700 bg-transparent ` +
+            inputClasses
           }
           onChange={handleOnChnage}
         />
       )}
       {inputType === "textarea" && (
         <textarea
+          rows={rows}
           placeholder={placeholder}
           value={value}
           className={
-            `px-2 py-1 border border-neutral-300 focus:border-2 focus:border-neutral-400 outline-none rounded-sm text-stone-700 ` + textareaClasses
+            `px-2 py-1 border border-neutral-300 focus:border-2 focus:border-neutral-400 outline-none rounded text-stone-700 bg-transparent ` +
+            textareaClasses
           }
           onChange={handleOnChnage}
         />

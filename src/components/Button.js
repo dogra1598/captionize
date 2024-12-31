@@ -5,7 +5,7 @@ const Button = ({ btnClasses = "", btnText = "Click Me", onBtnClick }) => {
 
   return (
     <button
-      className={`bg-blue-500 hover:bg-blue-700 text-white text-base rounded-sm px-5 py-2 font-semibold outline-none ` + btnClasses}
+      className={`bg-[rgba(62,88,121,0.9)] hover:bg-[#3E5879] text-white text-base rounded px-5 py-2 font-semibold outline-none ` + btnClasses}
       onClick={handleOnClick}
     >
       {btnText}

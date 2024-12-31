@@ -93,7 +93,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-30 xl:mx-30 2xl:mx-[10rem] mt-10">
+      <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-30 xl:mx-30 2xl:mx-[10rem] mt-10 mb-5">
         <div className="md:grid md:grid-flow-col md:grid-cols-5 md:gap-4">
           <InputField
             value={videoUrlInput}
